@@ -56,3 +56,36 @@ def total(*numbers):
 def details(**data):
     print(data)
 ```
+
+## filter()
+
+### Syntax
+
+```python
+filter(function, iterable)
+```
+
+### Example
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+def is_even(number):
+    return number % 2 == 0
+
+result = list(filter(is_even, numbers))
+
+print(result)
+```
+
+### Output
+
+```text
+[2, 4]
+```
+
+### Key Points
+
+- `filter()` returns only the elements that satisfy a condition.
+- The function passed to `filter()` must return `True` or `False`.
+- `filter()` returns a filter object, so it is commonly converted to a list using `list()`.
