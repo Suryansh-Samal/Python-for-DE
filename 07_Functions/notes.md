@@ -89,3 +89,54 @@ print(result)
 - `filter()` returns only the elements that satisfy a condition.
 - The function passed to `filter()` must return `True` or `False`.
 - `filter()` returns a filter object, so it is commonly converted to a list using `list()`.
+
+## Variable Scope
+
+### Types of Variables
+
+- Global Variables
+- Local Variables
+
+---
+
+### Global Variable
+
+A global variable is declared outside a function and can be accessed from anywhere in the program.
+
+```python
+x = 100
+```
+
+---
+
+### Local Variable
+
+A local variable is declared inside a function and can only be accessed within that function.
+
+```python
+def demo():
+    x = 50
+```
+
+---
+
+### global Keyword
+
+The `global` keyword allows a function to modify a global variable.
+
+```python
+x = 100
+
+def change():
+    global x
+    x = 50
+```
+
+---
+
+## Key Points
+
+- Global variables are accessible throughout the program.
+- Local variables exist only inside the function where they are defined.
+- A local variable with the same name as a global variable **shadows** the global variable inside that function.
+- Use the `global` keyword only when you need to modify a global variable.
