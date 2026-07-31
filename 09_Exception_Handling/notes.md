@@ -33,3 +33,31 @@ finally:
 - `Exception as e` stores the error message.
 - `finally` always executes.
 - Code written after a `return` statement is never executed.
+
+## raise
+
+### Syntax
+
+```python
+raise ExceptionType("Error Message")
+```
+
+### Example
+
+```python
+age = 15
+
+if age < 18:
+    raise ValueError("Age must be at least 18.")
+```
+
+## Key Points
+
+- The `raise` keyword is used to generate an exception manually.
+- It is commonly used for input validation.
+- You can raise built-in exceptions such as:
+  - `ValueError`
+  - `TypeError`
+  - `KeyError`
+  - `IndexError`
+- You can also create and raise custom exceptions.
