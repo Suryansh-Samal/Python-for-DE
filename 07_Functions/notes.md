@@ -140,3 +140,32 @@ def change():
 - Local variables exist only inside the function where they are defined.
 - A local variable with the same name as a global variable **shadows** the global variable inside that function.
 - Use the `global` keyword only when you need to modify a global variable.
+
+## Lambda Functions
+
+### Syntax
+
+```python
+lambda arguments: expression
+```
+
+### Example
+
+```python
+addition = lambda x, y: x + y
+
+print(addition(10, 20))
+```
+
+### Output
+
+```text
+30
+```
+
+## Key Points
+
+- Lambda functions are anonymous functions.
+- They are defined using the `lambda` keyword.
+- A lambda function can have multiple arguments but only one expression.
+- They are commonly used with functions like `map()`, `filter()`, and `sorted()`.
