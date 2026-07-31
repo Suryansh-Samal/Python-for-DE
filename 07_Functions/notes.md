@@ -169,3 +169,39 @@ print(addition(10, 20))
 - They are defined using the `lambda` keyword.
 - A lambda function can have multiple arguments but only one expression.
 - They are commonly used with functions like `map()`, `filter()`, and `sorted()`.
+
+## map()
+
+### Syntax
+
+```python
+map(function, iterable)
+```
+
+### Example
+
+```python
+numbers = [1, 2, 3, 4]
+
+def square(x):
+    return x * x
+
+result = list(map(square, numbers))
+
+print(result)
+```
+
+### Output
+
+```text
+[1, 4, 9, 16]
+```
+
+## Key Points
+
+- `map()` applies a function to every element of an iterable.
+- It returns a `map` object.
+- Convert the result using `list()`, `tuple()`, or another iterable type if needed.
+- Commonly used with:
+  - User-defined functions
+  - Lambda functions
