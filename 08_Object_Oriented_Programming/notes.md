@@ -29,4 +29,57 @@ class Employee:
 emp = Employee()
 
 emp.display()
+
+## Constructors
+
+- Constructors are defined using the `__init__()` method.
+- They are called automatically when an object is created.
+- Constructors are commonly used to initialize object attributes.
+
+### Example
+
+```python
+class Employee:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+---
+
+## Class Variables
+
+- Shared by all objects of a class.
+- Accessed using the class name.
+
+```python
+class Employee:
+
+    company = "Apple"
+```
+
+---
+
+## Instance Variables
+
+- Unique for each object.
+- Created using `self`.
+
+```python
+self.emp_name = emp_name
+```
+
+---
+
+## Static Methods
+
+- Declared using `@staticmethod`.
+- Do not receive `self` or `cls`.
+- Used for utility functions that don't access object or class data.
+
+```python
+@staticmethod
+def add(x, y):
+    return x + y
+```
 ```
