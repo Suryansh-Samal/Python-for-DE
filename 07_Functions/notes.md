@@ -205,3 +205,40 @@ print(result)
 - Commonly used with:
   - User-defined functions
   - Lambda functions
+
+  ## reduce()
+
+### Syntax
+
+```python
+reduce(function, iterable)
+```
+
+### Example
+
+```python
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda x, y: x + y, numbers)
+
+print(result)
+```
+
+### Output
+
+```text
+10
+```
+
+## Key Points
+
+- `reduce()` is available in the `functools` module.
+- It combines all elements of an iterable into a single value.
+- The function supplied to `reduce()` must accept **two arguments**.
+- Common operations include:
+  - Sum
+  - Product
+  - Maximum
+  - Minimum
