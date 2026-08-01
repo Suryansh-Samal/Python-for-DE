@@ -142,3 +142,60 @@ class Employee:
 - `@classmethod` is used with the `cls` parameter.
 - It is commonly used to modify or access class variables.
 - Class methods can be called using either the class name or an object, but calling them with the class name is the recommended approach.
+
+## Property Decorator
+
+### @property
+
+The `@property` decorator allows a method to be accessed like an attribute.
+
+### Syntax
+
+```python
+@property
+def method(self):
+    return value
+```
+
+---
+
+### @property.setter
+
+A setter updates the value of an attribute through a property.
+
+### Syntax
+
+```python
+@property_name.setter
+def property_name(self, value):
+    self.attribute = value
+```
+
+---
+
+## Example
+
+```python
+class Employee:
+
+    def __init__(self, name):
+        self.name = name
+
+    @property
+    def info(self):
+        return self.name
+
+    @info.setter
+    def info(self, value):
+        self.name = value
+```
+
+---
+
+## Key Points
+
+- `@property` creates a getter method.
+- `@property.setter` creates a setter method.
+- Properties can be accessed like normal attributes.
+- No parentheses are used when accessing a property.
+- Setters allow controlled updates to object attributes.
