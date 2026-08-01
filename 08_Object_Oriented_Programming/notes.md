@@ -199,3 +199,82 @@ class Employee:
 - Properties can be accessed like normal attributes.
 - No parentheses are used when accessing a property.
 - Setters allow controlled updates to object attributes.
+
+# Inheritance
+
+## Topics Covered
+
+- Single Inheritance
+- Multiple Inheritance
+- Multilevel Inheritance
+- Parent Class
+- Child Class
+- `super()`
+
+---
+
+## Single Inheritance
+
+A child class inherits from one parent class.
+
+```python
+class Parent:
+    pass
+
+class Child(Parent):
+    pass
+```
+
+---
+
+## Multiple Inheritance
+
+A child class inherits from more than one parent class.
+
+```python
+class A:
+    pass
+
+class B:
+    pass
+
+class C(A, B):
+    pass
+```
+
+---
+
+## Multilevel Inheritance
+
+Inheritance occurs through multiple levels.
+
+```python
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(B):
+    pass
+```
+
+---
+
+## super()
+
+`super()` calls methods or constructors of the parent class.
+
+```python
+super().__init__(arguments)
+```
+
+---
+
+## Key Points
+
+- Inheritance promotes code reuse.
+- Child classes inherit attributes and methods from parent classes.
+- `super()` is the preferred way to call the parent constructor.
+- Multiple inheritance allows one class to inherit from multiple parents.
+- Multilevel inheritance creates a chain of inheritance.
