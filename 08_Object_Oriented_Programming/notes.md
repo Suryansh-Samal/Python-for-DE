@@ -83,3 +83,62 @@ def add(x, y):
     return x + y
 ```
 ```
+
+## Class Methods
+
+### Syntax
+
+```python
+@classmethod
+def method_name(cls):
+    pass
+```
+
+---
+
+### Example
+
+```python
+class Employee:
+
+    company = "Apple"
+
+    @classmethod
+    def change_company(cls, company):
+        cls.company = company
+```
+
+---
+
+## cls
+
+- `cls` refers to the **class itself**.
+- It is similar to `self`, but `self` refers to an object, while `cls` refers to the class.
+
+---
+
+## Difference Between self and cls
+
+| self | cls |
+|------|-----|
+| Refers to the current object | Refers to the class |
+| Used in instance methods | Used in class methods |
+| Can access instance variables | Can access class variables |
+
+---
+
+## Difference Between Instance, Class and Static Methods
+
+| Method Type | First Parameter | Can Access Instance Variables | Can Access Class Variables |
+|-------------|-----------------|-------------------------------|----------------------------|
+| Instance Method | `self` | ✅ | ✅ |
+| Class Method | `cls` | ❌ | ✅ |
+| Static Method | None | ❌ | ❌ |
+
+---
+
+## Key Points
+
+- `@classmethod` is used with the `cls` parameter.
+- It is commonly used to modify or access class variables.
+- Class methods can be called using either the class name or an object, but calling them with the class name is the recommended approach.

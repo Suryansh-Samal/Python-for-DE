@@ -16,8 +16,10 @@ class employee ():
         print(x+y)
 emp1 = employee('Suryansh' , 'Data Engineering')
 emp2 = employee('Piyush' , 'Development')
+emp3= employee('Sita', 'DA')
 emp1.changes('Nvidia')
 emp2.company = 'Palantir'
 emp1.info()
 emp2.info()
+emp3.info()
 emp1.addition(2,3)
