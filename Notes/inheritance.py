@@ -50,7 +50,7 @@ class employee (Company,Country):
     def full_info (self):
         print(f"Employee {self.emp_name} lives in country {self.country_name} and works at {self.comp_name}")
 
-    def employee_country_info(self):
+    def employee_company_info(self):
         Company.company_info(self)
 
     def employee_country_info(self):
