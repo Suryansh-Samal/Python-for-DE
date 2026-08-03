@@ -43,14 +43,7 @@ def process_table(table):
 
 with ThreadPoolExecutor(max_workers=len(tables)) as executor:
 
-    futures = []
 
     for table in tables:
 
         future = executor.submit(process_table, table)
-
-        futures.append(future)
-
-# Wait for all submitted tasks to finish
-for future in futures:
-    future.result()

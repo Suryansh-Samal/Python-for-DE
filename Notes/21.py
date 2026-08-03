@@ -19,3 +19,5 @@ class employee ():
 emp1= employee('Suryansh', 'Data Engineering')
 emp1.info()
 emp1.addition(4,6)
+emp1.changes('Microsoft')
+emp1.info()
