@@ -26,7 +26,7 @@ print(result)
 # ============================================
 
 def display_details(**details):
-    """Displays keyword arguments."""
+    """Displays keyword arguments.Converts it into dictionary"""
 
     print(details)
 
