@@ -23,7 +23,7 @@ def is_even(number):
 
     if number % 2 == 0:
         return True
-
+                        #Should use true and false as return values when using filter function
     return False
 
 
