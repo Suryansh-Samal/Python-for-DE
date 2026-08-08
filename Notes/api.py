@@ -8,12 +8,5 @@ data = response.json()
 
 print(data)
 
-
-
-
-
-
-
-
 # status code = 200
 # error = 404

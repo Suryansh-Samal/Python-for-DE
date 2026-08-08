@@ -11,7 +11,7 @@ Author: Suryansh
 
 my_dictionary = {
     "name": "Suryansh",
-    "age": 20,
+    "age": 18,
     "city": "Delhi",
     "demo": {
         "a": 1,
@@ -31,6 +31,14 @@ print(my_dictionary)
 # ============================================
 
 my_dictionary["age"] = 21
+
+print(my_dictionary)
+
+# ============================================
+# Adding Item
+# ============================================
+
+my_dictionary["Domain"] = 'Data Engineering'
 
 print(my_dictionary)
 
