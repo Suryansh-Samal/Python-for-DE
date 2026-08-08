@@ -8,7 +8,7 @@ Author: Suryansh
 my_list = [1, 2, "Suryansh", ["aa", "bb", "cc"]]
 
 # String for slicing examples
-phone = "+91 9910731185"
+phone = "+91 954xxx7xx4"
 
 # Accessing elements from a nested list
 print(my_list[3][1])
